@@ -63,8 +63,6 @@ class DataPipeline:
                 for tag_name, value in extracted_tags.items():
                     self.df[tag_name] = value
 
-        # Clean EXIF data
-
         # Rename columns
         self.df = self.df.rename(
             columns={
