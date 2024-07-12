@@ -4,6 +4,8 @@ import pandas as pd
 import requests
 from PIL import ExifTags, Image
 
+Image.MAX_IMAGE_PIXELS = 933120000
+
 
 class DataPipeline:
     API_URL = "https://api.nasa.gov/planetary/apod"
